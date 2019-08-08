@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     var songs = ["firstSong", "malhari", "Zingaat", "humpty", "chasma", "guru", "kar", "queen", "simba"]
     @IBAction func playButton(_ sender: Any) {
         player.play()
-        
     }
     
     @IBAction func pauseButton(_ sender: Any) {
