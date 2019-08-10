@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     var songs = ["firstSong", "malhari", "Zingaat", "humpty", "chasma", "guru", "kar", "queen", "simba"]
     @IBAction func playButton(_ sender: Any) {
         player.play()
-        
     }
     
     @IBAction func pauseButton(_ sender: Any) {
@@ -46,6 +45,7 @@ class ViewController: UIViewController {
             let number = Int.random(in: 0...8)
             count = number
             soundAlabum()
+            player.play()
         }
     }
     
@@ -59,8 +59,6 @@ class ViewController: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
     }
-    
-    
     
     @IBAction func swiped(gesture: UISwipeGestureRecognizer){
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
